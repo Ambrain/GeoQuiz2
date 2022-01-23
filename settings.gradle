@@ -1,10 +1,11 @@
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+def management = dependencyResolutionManagement {
+    //repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        //jcenter() // Warning: this repository is going to shut down soon
     }
 }
+management
 rootProject.name = "GeoQuiz2"
 include ':app'
